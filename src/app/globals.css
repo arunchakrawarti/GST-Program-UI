@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* -------- Theme Colors -------- */
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-amber: #ef9309;
+  --color-navy: #0a2745;
+  --color-gray-medium: #8e8e8e;
+  --color-gray-dark: #4f4f4f;
+  --color-teal-green: #17C185;
+  --color-navy-deep: #22175D;
+  --color-purple-muted: #A28FB5;
+  --color-navy-dark: #20074E;
+  --color-navy-light: #7433A5;
+
+}
+
+/* -------- Global Scroll & Layout -------- */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.container {
+  @apply mx-auto w-full px-5 md:w-[90%] md:px-0 lg:w-[85%];
+}
+
+/* Hide Scrollbars */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #0d1b3d;
+  background: linear-gradient(135deg, #0d1b3d 0%, #1b103c 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* ---- Custom slick dots ---- */
+.custom-dots .slick-dots {
+  bottom: -50px; /* controls vertical position of dots */
+}
+
+.custom-dots .slick-dots li button:before {
+  color: #ef9309; /* <-- your amber color */
+  opacity: 0.6;
+  font-size: 5px;
+}
+
+.custom-dots .slick-dots li.slick-active button:before {
+  color: #ffffff; /* active dot color */
+  opacity: 1;
+}
