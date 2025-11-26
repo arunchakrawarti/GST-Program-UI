@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
 import { FaGooglePlay } from "react-icons/fa";
 import { BsLightningCharge } from "react-icons/bs";
 import { IoMdStar } from "react-icons/io";
@@ -26,21 +25,22 @@ const HeroSection = () => {
       setAnimationClass("slide-up");
 
       setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % texts.length); // switch text
-        setAnimationClass("slide-down"); // enter animation
-      }, 400); // small delay to sync with animation
+        setCurrentIndex((prev) => (prev + 1) % texts.length);
+        setAnimationClass("slide-down");
+      }, 400);
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [texts.length]);
+  }, []);
 
   return (
     <section
       style={{
         background: "linear-gradient(270deg, #004857 5%, #040B1C 50%)",
       }}
-      className="relative overflow-hidden text-white h-screen"
+      className="relative overflow-hidden text-white min-h-screen flex items-center pb-36 sm:pb-32 md:pb-20 lg:pb-10"
     >
+      {/* Animations */}
       <style jsx>{`
         @keyframes slideDown {
           0% {
@@ -52,7 +52,6 @@ const HeroSection = () => {
             transform: translateY(0);
           }
         }
-
         @keyframes slideUp {
           0% {
             opacity: 1;
@@ -63,101 +62,93 @@ const HeroSection = () => {
             transform: translateY(20px);
           }
         }
-
         .slide-down {
           animation: slideDown 0.4s ease-in-out forwards;
         }
-
         .slide-up {
           animation: slideUp 0.4s ease-in-out forwards;
         }
       `}</style>
 
-      <div className="container grid grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 relative z-10">
         {/* Left Side */}
-        <div className="space-y-6 mt-26 md:mt-30 lg:mt-32 z-10">
-          <div className="flex  relative">
-            <Image
-              alt="lightning"
-              src="/Assets/lightning.svg"
-              width={100}
-              height={100}
-              className="h-16 md:h-20 lg:h-24 -ml-8 md:-ml-2"
-            />
-            <div>
-              <h1 className="text-[1.5rem] md:text-[2rem] lg:text-[2.4rem] tracking-wide font-bold leading-snug absolute z-10 top-1/2 -translate-y-1/2 text-nowrap">
-                GST Billing Software <br></br> Platform for{" "}
-                <span
-                  key={texts[currentIndex]}
-                  className={`text-teal-green inline-block ${animationClass}`}
-                >
-                  {texts[currentIndex]}
-                </span>
-              </h1>
-            </div>
+        <div className="mt-24 lg:mt-0 space-y-6">
+          <div className="relative">
+            <h1 className="leading-snug text-[1.8rem] sm:text-[2.2rem] md:text-[2.6rem] xl:text-[3rem] font-bold">
+              GST Billing Software <br />
+              Platform for{" "}
+              <span
+                key={texts[currentIndex]}
+                className={`text-teal-green inline-block ${animationClass}`}
+              >
+                {texts[currentIndex]}
+              </span>
+            </h1>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-5 md:gap-10 lg:gap-16 lg:ml-4 mt-10 md:mt-12 lg:mt-16">
-            <div className="border-l-2 border-gray-medium pl-3 lg:pl-3.5">
-              <h1 className="text-gray-medium text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-semibold">
+          {/* Built For Section */}
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 md:gap-16 mt-10">
+            <div className="border-l-2 border-gray-medium pl-3">
+              <h1 className="text-gray-medium text-lg font-semibold">
                 Built for
               </h1>
-              <p className="text-[1.15rem] md:text-[1.4rem] lg:text-[1.5rem] text-white tracking-wide font-bold">
+              <p className="text-xl sm:text-2xl font-bold text-white">
                 Businesses
               </p>
             </div>
-            <div className="border-l-2 border-gray-medium pl-3 lg:pl-3.5">
-              <h1 className="text-gray-medium text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-semibold">
+
+            <div className="border-l-2 border-gray-medium pl-3">
+              <h1 className="text-gray-medium text-lg font-semibold">
                 Built for
               </h1>
-              <p className="text-[1.15rem] md:text-[1.4rem] lg:text-[1.5rem] text-white tracking-wide font-bold">
+              <p className="text-xl sm:text-2xl font-bold text-white">
                 Chartered Accountants
               </p>
             </div>
           </div>
 
-          <h1 className="text-[1rem] text-gray-medium  font-semibold mt-6 md:mt-8 lg:mt-12">
-            Open your
-            <span className="text-amber uppercase"> free </span>
-            demat account in minutes!
-          </h1>
+          <p className="text-sm sm:text-base text-gray-medium font-semibold mt-6">
+            Open your <span className="text-amber uppercase">free</span> demat
+            account in minutes!
+          </p>
 
           {/* Stats */}
-          <div className="flex gap-8 my-5 text-sm md:text-base">
+          <div className="flex flex-wrap gap-4 sm:gap-6 text-sm sm:text-base mt-4">
             <div className="flex items-center gap-2">
-              <IoMdStar className="text-amber" />
-              <span className="text-[1rem] text-white">1 Mn+ Active Users</span>
+              <IoMdStar className="text-amber text-lg" />
+              <span>1 Mn+ Active Users</span>
             </div>
+
             <div className="flex items-center gap-2">
-              <FaGooglePlay className="text-green-400" />
-              <span className="text-[1rem] text-white">
-                4.5 Play Store Rating
-              </span>
+              <FaGooglePlay className="text-green-400 text-lg" />
+              <span>4.5 Play Store Rating</span>
             </div>
           </div>
         </div>
 
-        {/* Right Side Image */}
-        <div className=" absolute bottom-40 lg:-bottom-12 right-0 justify-center ">
+        {/* Right Image */}
+        <div className="flex justify-center lg:justify-end">
           <Image
             src="/Assets/gsttet.png"
-            alt="Trader"
-            width={760}
-            height={960}
-            className="object-contain relative z-0"
+            alt="GST Illustration"
+            width={600}
+            height={900}
+            className="object-contain max-h-[60vh] sm:max-h-[70vh] md:max-h-[75vh] lg:max-h-[80vh]"
           />
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="absolute  bottom-0 left-0 w-full bg-[#0B162C]/80 backdrop-blur-md flex flex-wrap justify-center gap-6 py-4 text-sm">
+      <div className="absolute bottom-0 left-0 w-full bg-[#0B162C]/80 backdrop-blur-md grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 px-4 sm:px-6 py-4 text-sm z-20">
         {texts.map((item) => (
           <div
             key={item}
-            className="flex items-center gap-2 px-3 py-1 rounded-md bg-[#0F2138]/50 hover:bg-[#1A3B5D]/80 cursor-pointer transition"
+            className="flex items-center gap-2 px-3 py-2 rounded-md bg-[#0F2138]/50 hover:bg-[#1A3B5D]/80 cursor-pointer transition"
           >
             <BsLightningCharge className="text-amber" />
-            <span>{item}</span>
+            <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px]">
+              {item}
+            </span>
           </div>
         ))}
       </div>
