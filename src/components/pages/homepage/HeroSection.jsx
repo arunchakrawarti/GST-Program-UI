@@ -38,7 +38,7 @@ const HeroSection = () => {
       style={{
         background: "linear-gradient(270deg, #004857 5%, #040B1C 50%)",
       }}
-      className="relative overflow-hidden text-white min-h-screen flex items-center pb-36 sm:pb-32 md:pb-20 lg:pb-10"
+      className="relative overflow-hidden text-white min-h-screen flex items-center pb-52 sm:pb-32 md:pb-20 lg:pb-20"
     >
       {/* Animations */}
       <style jsx>{`
