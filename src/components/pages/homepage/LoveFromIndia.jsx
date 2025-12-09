@@ -174,12 +174,10 @@
 
 
 
+
 "use client";
 import React from "react";
-import Slider from "react-slick";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Button from "@/components/atoms/Button";
 
 const testimonials = [
@@ -222,47 +220,6 @@ const testimonials = [
 ];
 
 const LoveFromIndia = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2600,
-    arrows: false,
-
-    // default → XL
-    slidesToShow: 4,
-    slidesToScroll: 1,
-
-    appendDots: (dots) => (
-      <div>
-        <ul className="flex justify-center mt-6 gap-2">{dots}</ul>
-      </div>
-    ),
-
-    customPaging: () => (
-      <div className="w-3 h-3 bg-amber rounded-full opacity-60 hover:opacity-100 transition-all"></div>
-    ),
-
-    responsive: [
-      {
-        breakpoint: 1280, // lg
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 1024, // md → exactly 2 cards
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768, // sm → exactly 1 card
-        settings: { slidesToShow: 1 },
-      },
-      {
-        breakpoint: 480, // small phones → still 1 card
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   return (
     <section className="w-full bg-navy py-14 text-white px-4">
       <div className="max-w-7xl mx-auto">
@@ -272,38 +229,36 @@ const LoveFromIndia = () => {
           ❤️ Trusted by Millions of <span className="text-amber">GST Users</span>
         </h2>
 
-        {/* Slider FIX: w-full + overflow-visible */}
-        <div className="w-full overflow-visible">
-          <Slider {...settings}>
-            {testimonials.map((item, index) => (
-              <div key={index} className="px-2">
-                <div className="bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 h-auto min-h-[230px] flex flex-col">
-
-                  {/* Profile */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-12 rounded-full overflow-hidden">
-                      <Image
-                        src={item.img}
-                        alt={item.name}
-                        width={50}
-                        height={50}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="font-medium">{item.name}</h3>
-                      <p className="text-gray-medium text-xs">{item.username}</p>
-                    </div>
-                  </div>
-
-                  {/* Text */}
-                  <p className="text-gray-medium text-sm leading-relaxed">
-                    {item.text}
-                  </p>
+        {/* Horizontal Scrollable Flex */}
+        <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
+          {testimonials.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-[90%] sm:w-[80%] md:w-[45%] lg:w-[23%] bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 flex flex-col min-h-[230px]"
+            >
+              {/* Profile */}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-full overflow-hidden">
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    width={48}
+                    height={48}
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-medium">{item.name}</h3>
+                  <p className="text-gray-medium text-xs">{item.username}</p>
                 </div>
               </div>
-            ))}
-          </Slider>
+
+              {/* Text */}
+              <p className="text-gray-medium text-sm leading-relaxed flex-grow">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* Bottom CTA */}
