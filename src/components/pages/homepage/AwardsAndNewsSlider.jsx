@@ -305,6 +305,9 @@
 
 // export default AwardsAndNewsSlider;
 
+
+
+
 "use client";
 import React, { useRef } from "react";
 import Slider from "react-slick";
@@ -337,13 +340,13 @@ const AwardsAndNewsSlider = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Desktop
+    slidesToShow: 4,       // Desktop
     slidesToScroll: 1,
     swipeToSlide: true,
-    arrows: false, // manual arrows above
+    arrows: false,         // Arrows handled manually above
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Tablet
-      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },  // Mobile
+      { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },  // Mobile
     ],
   };
 
@@ -374,9 +377,9 @@ const AwardsAndNewsSlider = () => {
 
         <Slider ref={awardsRef} {...sliderSettings}>
           {awards.map((award, index) => (
-            <div key={index} className="px-3">
+            <div key={index} className="px-2">
               <div className="py-8 flex flex-col items-center justify-center text-center bg-white rounded-xl shadow-md min-h-[200px]">
-                <Image src={award.img} alt={award.title} width={140} height={140} className="mb-4" />
+                <Image src={award.img} alt="award" width={140} height={140} className="mb-4" />
                 <h3 className="text-navy font-medium text-[1rem] mb-1">{award.title}</h3>
                 <p className="text-gray-dark text-[0.9rem] font-bold">{award.year}</p>
               </div>
@@ -405,9 +408,9 @@ const AwardsAndNewsSlider = () => {
 
         <Slider ref={newsRef} {...sliderSettings}>
           {news.map((item, index) => (
-            <div key={index} className="px-3 pb-4">
+            <div key={index} className="px-2 pb-4">
               <div className="p-6 flex flex-col gap-3 border border-purple-muted/20 rounded-xl bg-purple-muted/10 transition-all duration-300 min-h-[180px]">
-                <Image src={item.img} alt={item.title} width={40} height={40} className="object-contain" />
+                <Image src={item.img} alt="news" width={40} height={40} className="object-contain" />
                 <h3 className="text-navy font-semibold text-[1rem] leading-tight">{item.title}</h3>
               </div>
             </div>
