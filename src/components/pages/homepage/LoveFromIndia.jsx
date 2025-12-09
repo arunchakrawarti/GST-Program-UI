@@ -275,7 +275,7 @@ const LoveFromIndia = () => {
         <Slider {...settings}>
           {testimonials.map((item, index) => (
             <div key={index} className="px-2">
-              <div className="bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 h-full min-h-[230px] flex flex-col">
+              <div className="bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all   duration-300 h-full min-h-[230px] flex flex-col">
                 
                 {/* Profile */}
                 <div className="flex items-center gap-3 mb-3">
