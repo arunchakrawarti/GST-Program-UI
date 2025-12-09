@@ -189,12 +189,12 @@
 
 
 
+
 "use client";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { CgArrowRight, CgArrowLeft } from "react-icons/cg";
 import Image from "next/image";
 
 const AwardsAndNewsSlider = () => {
@@ -280,91 +280,67 @@ const AwardsAndNewsSlider = () => {
       {/* ----------- Top Section ----------- */}
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-navy flex items-center">
+          <h2 className="text-2xl font-semibold text-amber-500 flex items-center">
             🏆 Recognized in GST & Tax Innovation
           </h2>
-
-          <div className="flex gap-2">
-            <button
-              onClick={() => awardsRef.current.slickPrev()}
-              className="w-10 h-10 rounded-full border border-amber/70 text-amber hover:text-amber/80 cursor-pointer flex items-center justify-center hover:border-amber/50"
-            >
-              <CgArrowLeft size={24} />
-            </button>
-            <button
-              onClick={() => awardsRef.current.slickNext()}
-              className="w-10 h-10 rounded-full border border-amber/70 text-amber hover:text-amber/80 cursor-pointer flex items-center justify-center hover:border-amber/50"
-            >
-              <CgArrowRight size={24} />
-            </button>
-          </div>
         </div>
 
-        <Slider ref={awardsRef} {...settings}>
-          {awards.map((award, index) => (
-            <div key={index} className="px-3">
-              <div className="py-8 flex flex-col items-center justify-center text-center min-h-[200px]"> {/* Adjusted minimum height */}
-                <Image
-                  src={award.img}
-                  alt="award"
-                  width={140}
-                  height={140}
-                  className="mb-4"
-                />
-                <h3 className="text-navy font-medium text-[1rem] mb-1">
-                  {award.title}
-                </h3>
-                <p className="text-gray-dark text-[0.9rem] font-bold">
-                  {award.year}
-                </p>
+        {/* Slider for Awards */}
+        <div className="overflow-x-auto scrollbar-hide cursor-grab">
+          <Slider ref={awardsRef} {...settings}>
+            {awards.map((award, index) => (
+              <div key={index} className="px-3">
+                <div className="py-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                  <Image
+                    src={award.img}
+                    alt="award"
+                    width={140}
+                    height={140}
+                    className="mb-4"
+                  />
+                  <h3 className="text-navy font-medium text-[1rem] mb-1">
+                    {award.title}
+                  </h3>
+                  <p className="text-gray-dark text-[0.9rem] font-bold">
+                    {award.year}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
 
       {/* ----------- News Section ----------- */}
       <div className="container mx-auto mt-20">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-navy">We are in the News</h2>
-
-          <div className="flex gap-2">
-            <button
-              onClick={() => newsRef.current.slickPrev()}
-              className="w-10 h-10 rounded-full border border-amber/70 text-amber hover:text-amber/80 cursor-pointer flex items-center justify-center hover:border-amber/50"
-            >
-              <CgArrowLeft size={24} />
-            </button>
-            <button
-              onClick={() => newsRef.current.slickNext()}
-              className="w-10 h-10 rounded-full border border-amber/70 text-amber hover:text-amber/80 cursor-pointer flex items-center justify-center hover:border-amber/50"
-            >
-              <CgArrowRight size={24} />
-            </button>
-          </div>
+          <h2 className="text-2xl font-semibold text-amber-500">We are in the News</h2>
         </div>
 
-        <Slider ref={newsRef} {...settings}>
-          {news.map((item, index) => (
-            <div key={index} className="px-3 pb-4">
-              <div className="p-6 flex flex-col gap-3 border border-purple-muted/20 rounded-xl bg-purple-muted/1 transition-all duration-300 min-h-[180px]"> {/* Adjusted minimum height */}
-                <Image
-                  src={item.img}
-                  alt="news"
-                  width={40}
-                  height={40}
-                  className="object-contain"
-                />
-                <h3 className="text-navy font-semibold text-[1rem] leading-tight">
-                  {item.title}
-                </h3>
+        {/* Slider for News */}
+        <div className="overflow-x-auto scrollbar-hide cursor-grab">
+          <Slider ref={newsRef} {...settings}>
+            {news.map((item, index) => (
+              <div key={index} className="px-3 pb-4">
+                <div className="p-6 flex flex-col gap-3 border border-purple-muted/20 rounded-xl bg-purple-muted/1 transition-all duration-300 min-h-[180px]">
+                  <Image
+                    src={item.img}
+                    alt="news"
+                    width={40}
+                    height={40}
+                    className="object-contain"
+                  />
+                  <h3 className="text-navy font-semibold text-[1rem] leading-tight">
+                    {item.title}
+                  </h3>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
 
-      {/* Border Section (Optional) */}
+      {/* Optional Border Section */}
       <div>
         <Image
           src="/Assets/dhanBorder.png"
