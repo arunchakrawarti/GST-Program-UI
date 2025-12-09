@@ -189,7 +189,6 @@
 
 
 
-
 "use client";
 import React, { useRef } from "react";
 import Slider from "react-slick";
@@ -279,7 +278,7 @@ const AwardsAndNewsSlider = () => {
   return (
     <section id="winning" className="bg-[#fff7ec] py-16 overflow-hidden">
       {/* ----------- Top Section ----------- */}
-      <div className="container mx-auto ">
+      <div className="container mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold text-navy flex items-center">
             🏆 Recognized in GST & Tax Innovation
@@ -327,9 +326,7 @@ const AwardsAndNewsSlider = () => {
       {/* ----------- News Section ----------- */}
       <div className="container mx-auto mt-20">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-navy">
-            We are in the News
-          </h2>
+          <h2 className="text-2xl font-semibold text-navy">We are in the News</h2>
 
           <div className="flex gap-2">
             <button
@@ -367,6 +364,7 @@ const AwardsAndNewsSlider = () => {
         </Slider>
       </div>
 
+      {/* Border Section (Optional) */}
       <div>
         <Image
           src="/Assets/dhanBorder.png"
