@@ -307,7 +307,6 @@
 
 
 
-
 "use client";
 import React, { useRef } from "react";
 import Slider from "react-slick";
@@ -340,12 +339,13 @@ const AwardsAndNewsSlider = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,   // Large screen
-    slidesToScroll: 1, // Click/Swipe scroll 1
-    swipeToSlide: true, // Enable swipe gesture for mobile
+    slidesToShow: 4,        // Desktop
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    arrows: false,          // Card ke upar koi arrow nahi
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // md
-      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },  // sm
+      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Tablet / md
+      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },  // Mobile / sm
     ],
   };
 
