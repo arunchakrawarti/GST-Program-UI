@@ -226,9 +226,11 @@ const LoveFromIndia = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2800,
+    autoplaySpeed: 2600,
     arrows: false,
-    slidesToShow: 4, // default (xl screens)
+
+    // default → XL
+    slidesToShow: 4,
     slidesToScroll: 1,
 
     appendDots: (dots) => (
@@ -241,22 +243,21 @@ const LoveFromIndia = () => {
       <div className="w-3 h-3 bg-amber rounded-full opacity-60 hover:opacity-100 transition-all"></div>
     ),
 
-    // ⭐ YOUR REQUIRED RESPONSIVE SETTINGS
     responsive: [
       {
-        breakpoint: 1280, // lg laptop
+        breakpoint: 1280, // lg
         settings: { slidesToShow: 3 },
       },
       {
-        breakpoint: 1024, // md → EXACTLY 2 CARDS
+        breakpoint: 1024, // md → exactly 2 cards
         settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 768, // sm → EXACTLY 1 CARD
+        breakpoint: 768, // sm → exactly 1 card
         settings: { slidesToShow: 1 },
       },
       {
-        breakpoint: 480, // extra small phones
+        breakpoint: 480, // small phones → still 1 card
         settings: { slidesToShow: 1 },
       },
     ],
@@ -271,37 +272,39 @@ const LoveFromIndia = () => {
           ❤️ Trusted by Millions of <span className="text-amber">GST Users</span>
         </h2>
 
-        {/* Slider */}
-        <Slider {...settings}>
-          {testimonials.map((item, index) => (
-            <div key={index} className="px-2">
-              <div className="bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all   duration-300 h-full min-h-[230px] flex flex-col">
-                
-                {/* Profile */}
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-dark">
-                    <Image
-                      src={item.img}
-                      alt={item.name}
-                      width={50}
-                      height={50}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-medium">{item.name}</h3>
-                    <p className="text-gray-medium text-xs">{item.username}</p>
-                  </div>
-                </div>
+        {/* Slider FIX: w-full + overflow-visible */}
+        <div className="w-full overflow-visible">
+          <Slider {...settings}>
+            {testimonials.map((item, index) => (
+              <div key={index} className="px-2">
+                <div className="bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 h-auto min-h-[230px] flex flex-col">
 
-                {/* Text */}
-                <p className="text-gray-medium text-sm leading-relaxed flex-grow">
-                  {item.text}
-                </p>
+                  {/* Profile */}
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 rounded-full overflow-hidden">
+                      <Image
+                        src={item.img}
+                        alt={item.name}
+                        width={50}
+                        height={50}
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-medium">{item.name}</h3>
+                      <p className="text-gray-medium text-xs">{item.username}</p>
+                    </div>
+                  </div>
+
+                  {/* Text */}
+                  <p className="text-gray-medium text-sm leading-relaxed">
+                    {item.text}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
 
         {/* Bottom CTA */}
         <div className="mt-14 bg-[#2a4565] rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
