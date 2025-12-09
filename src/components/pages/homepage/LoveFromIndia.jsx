@@ -57,7 +57,7 @@
 //     infinite: true,
 //     autoplay: true,
 //     autoplaySpeed: 3000,
-//     slidesToShow: 4, 
+//     slidesToShow: 4, //  Increased
 //     slidesToScroll: 1,
 //     arrows: false,
 //     appendDots: (dots) => (
@@ -186,37 +186,37 @@ const testimonials = [
   {
     name: "Amit Verma",
     username: "@amit_gstfilings",
-    text: "GST return filing has become super smooth with this platform. Fast, accurate and completely hassle-free.",
+    text: "GST return filing has become super smooth with this platform. Fast, accurate and hassle-free.",
     img: "/Assets/lott2.webp",
   },
   {
     name: "Priya Sinha",
     username: "@priyas_taxpro",
-    text: "Best GST portal experience so far. Auto-reconciliation and error-free calculations save me hours every month.",
+    text: "Best GST portal experience, auto-reconciliation saves hours.",
     img: "/Assets/lott2.webp",
   },
   {
     name: "Rohan Gupta",
     username: "@rohanbiz_owner",
-    text: "Finally a platform that makes GST compliance simple. No glitches, smooth workflow and super-fast filing.",
+    text: "Finally a platform that makes GST compliance simple and smooth.",
     img: "/Assets/lott2.webp",
   },
   {
     name: "Sumit Sharma",
     username: "@sumit_compliance",
-    text: "Amazing GST platform! Clean UI, easy navigation and total transparency.",
+    text: "Amazing UI, easy navigation and total transparency.",
     img: "/Assets/lott2.webp",
   },
   {
     name: "Neha Jain",
     username: "@nehacorporate",
-    text: "The automated GST reports and data security features are top-notch.",
+    text: "Automated reports and strong security features. Best for companies.",
     img: "/Assets/lott2.webp",
   },
   {
     name: "Vikas Patel",
     username: "@vikas_taxpayer",
-    text: "A true game changer! Super quick GST filing, accurate tax breakup and instant summaries.",
+    text: "Super quick filing, accurate tax breakup and summaries.",
     img: "/Assets/lott2.webp",
   },
 ];
@@ -226,95 +226,107 @@ const LoveFromIndia = () => {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    autoplaySpeed: 2800,
     arrows: false,
-
-    responsive: [
-      { breakpoint: 1280, settings: { slidesToShow: 3 } },
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
-    ],
+    slidesToShow: 4, // default (xl screens)
+    slidesToScroll: 1,
 
     appendDots: (dots) => (
       <div>
-        <ul className="flex justify-center mt-6 gap-2"> {dots} </ul>
+        <ul className="flex justify-center mt-6 gap-2">{dots}</ul>
       </div>
     ),
+
     customPaging: () => (
       <div className="w-3 h-3 bg-amber rounded-full opacity-60 hover:opacity-100 transition-all"></div>
     ),
+
+    // ⭐ YOUR REQUIRED RESPONSIVE SETTINGS
+    responsive: [
+      {
+        breakpoint: 1280, // lg laptop
+        settings: { slidesToShow: 3 },
+      },
+      {
+        breakpoint: 1024, // md → EXACTLY 2 CARDS
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768, // sm → EXACTLY 1 CARD
+        settings: { slidesToShow: 1 },
+      },
+      {
+        breakpoint: 480, // extra small phones
+        settings: { slidesToShow: 1 },
+      },
+    ],
   };
 
   return (
-    <section className="w-full bg-navy py-14 text-white">
-      <div className="container mx-auto px-4">
+    <section className="w-full bg-navy py-14 text-white px-4">
+      <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-center text-[1.6rem] md:text-[1.8rem] font-semibold mb-12 leading-tight">
-          <span className="mr-2">❤️</span>Trusted by Millions of{" "}
-          <span className="text-amber">GST Users</span>
+        <h2 className="text-center text-[1.6rem] md:text-[1.9rem] font-semibold mb-10 leading-snug">
+          ❤️ Trusted by Millions of <span className="text-amber">GST Users</span>
         </h2>
 
         {/* Slider */}
         <Slider {...settings}>
           {testimonials.map((item, index) => (
-            <div key={index} className="px-2 sm:px-3">
-              <div className="bg-[#2a4565] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-lg hover:scale-[1.03] transition-all duration-300 w-full h-auto min-h-[250px]">
+            <div key={index} className="px-2">
+              <div className="bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 h-full min-h-[230px] flex flex-col">
                 
                 {/* Profile */}
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full overflow-hidden">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-dark">
                     <Image
                       src={item.img}
                       alt={item.name}
-                      width={48}
-                      height={48}
+                      width={50}
+                      height={50}
                       className="object-cover"
                     />
                   </div>
                   <div>
                     <h3 className="font-medium">{item.name}</h3>
-                    <p className="text-gray-medium text-sm">{item.username}</p>
+                    <p className="text-gray-medium text-xs">{item.username}</p>
                   </div>
                 </div>
 
                 {/* Text */}
-                <p className="text-gray-medium text-[0.9rem] leading-relaxed">
+                <p className="text-gray-medium text-sm leading-relaxed flex-grow">
                   {item.text}
                 </p>
-
               </div>
             </div>
           ))}
         </Slider>
 
-        {/* Bottom Community Section */}
-        <div className="mt-16 lg:mt-20 bg-[#2a4565] rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          
+        {/* Bottom CTA */}
+        <div className="mt-14 bg-[#2a4565] rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold mb-1">
               Join India’s <span className="text-amber">#GSTProfessionals</span> Network
             </h3>
-            <p className="text-gray-medium text-sm">
-              Connect with GST consultants, CA firms, business owners & tax experts.
+            <p className="text-gray-medium text-sm max-w-md">
+              Connect with GST consultants, CAs, business owners & tax experts.
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap justify-center md:justify-end">
             <div className="flex -space-x-3">
-              <Image src="/Assets/lott2.webp" alt="user" width={40} height={40} className="rounded-full border-2 border-white" />
-              <Image src="/Assets/lott5.webp" alt="user" width={40} height={40} className="rounded-full border-2 border-white" />
-              <Image src="/Assets/maskgroup.webp" alt="user" width={40} height={40} className="rounded-full border-2 border-white" />
+              <Image src="/Assets/lott2.webp" width={45} height={45} className="rounded-full border-2 border-white" alt="user" />
+              <Image src="/Assets/lott5.webp" width={45} height={45} className="rounded-full border-2 border-white" alt="user" />
+              <Image src="/Assets/maskgroup.webp" width={45} height={45} className="rounded-full border-2 border-white" alt="user" />
             </div>
 
             <p className="text-sm text-white">72K+</p>
 
             <Button label="Join Now" showArrow className="py-3 px-5 rounded-md" />
           </div>
-
         </div>
+
       </div>
     </section>
   );
