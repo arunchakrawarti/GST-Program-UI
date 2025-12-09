@@ -342,10 +342,10 @@ const AwardsAndNewsSlider = () => {
     slidesToShow: 4,        // Desktop
     slidesToScroll: 1,
     swipeToSlide: true,
-    arrows: false,          // Card ke upar koi arrow nahi
+    arrows: false,          // Card-level arrows ko hide
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Tablet / md
-      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },  // Mobile / sm
+      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Tablet
+      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },  // Mobile
     ],
   };
 
