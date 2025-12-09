@@ -230,11 +230,11 @@ const LoveFromIndia = () => {
         </h2>
 
         {/* Horizontal Scrollable Flex */}
-        <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
+        <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 ">
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[90%] sm:w-[80%] md:w-[45%] lg:w-[23%] bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 flex flex-col min-h-[230px]"
+              className="flex-shrink-0 w-[90%] sm:w-[80%] md:w-[45%] lg:w-[23%] bg-[#2a4565] rounded-xl p-5 shadow-lg hover:scale-[1.03] transition-all duration-300 flex flex-col min-h-[190px]"
             >
               {/* Profile */}
               <div className="flex items-center gap-3 mb-3">
