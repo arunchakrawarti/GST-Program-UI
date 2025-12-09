@@ -35,11 +35,11 @@ const InvestTrade = () => {
         {/* Right Image */}
         <div className="w-full md:flex justify-center md:justify-end md:relative md:order-2 order-1">
           <Image
-            src="/Assets/common-banner.png"
+            src="/Assets/photocreated.png"
             alt="subscribe"
             width={530}
             height={560}
-            className="mx-auto md:mx-0 w-[245px]  md:w-[400px]  z-0 md:absolute -top-30 -mt-6 md:-mt-0"
+            className="mx-auto md:mx-0 w-[245px]  md:w-[500px]  z-0 md:absolute -top-10 -mt-6 md:-mt-0"
           />
         </div>
       </div>
