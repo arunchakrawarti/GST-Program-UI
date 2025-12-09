@@ -58,7 +58,7 @@ const Header = () => {
                   <Text
                     content={lebal}
                     href={path}
-                    className="text-gray-medium text-[0.91rem] font-normal tracking-wide hover:text-white transition-all duration-400"
+                    className="text-white text-[0.91rem] font-normal tracking-wide hover:text-white transition-all duration-400"
                   />
                 </div>
               ))}
@@ -107,7 +107,7 @@ const Header = () => {
               <Text
                 content={lebal}
                 href={path}
-                className="text-gray-medium text-[0.91rem] font-normal tracking-wide hover:text-white transition-all duration-400"
+                className="text-white-medium text-[0.91rem] font-normal tracking-wide hover:text-white transition-all duration-400"
               />
             </div>
           ))}
