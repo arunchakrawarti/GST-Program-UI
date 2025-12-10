@@ -190,17 +190,12 @@
 
 
 
+
 "use client";
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from "react";
 import Image from "next/image";
 
 const AwardsAndNewsSlider = () => {
-  const awardsRef = useRef(null);
-  const newsRef = useRef(null);
-
   const awards = [
     {
       img: "/Assets/IndiaShow.svg",
@@ -257,24 +252,6 @@ const AwardsAndNewsSlider = () => {
     },
   ];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4, // Default to show 4 slides on larger screens
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 }, // Show 2 slides on medium screens
-      },
-      {
-        breakpoint: 640,
-        settings: { slidesToShow: 1 }, // Show 1 slide on mobile screens
-      },
-    ],
-  };
-
   return (
     <section id="winning" className="bg-[#fff7ec] py-16 overflow-hidden">
       {/* ----------- Top Section ----------- */}
@@ -286,28 +263,29 @@ const AwardsAndNewsSlider = () => {
         </div>
 
         {/* Slider for Awards */}
-        <div className="overflow-x-auto scrollbar-hide cursor-grab">
-          <Slider ref={awardsRef} {...settings}>
+        <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-snap-x mandatory scroll-smooth">
+          <div className="flex gap-6 min-w-max">
             {awards.map((award, index) => (
-              <div key={index} className="px-3">
-                <div className="py-8 flex flex-col items-center justify-center text-center min-h-[200px]">
-                  <Image
-                    src={award.img}
-                    alt="award"
-                    width={140}
-                    height={140}
-                    className="mb-4"
-                  />
-                  <h3 className="text-navy font-medium text-[1rem] mb-1">
-                    {award.title}
-                  </h3>
-                  <p className="text-gray-dark text-[0.9rem] font-bold">
-                    {award.year}
-                  </p>
-                </div>
+              <div
+                key={index}
+                className="flex-shrink-0 w-[15%] sm:w-[25%] md:w-[45%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
+              >
+                <Image
+                  src={award.img}
+                  alt="award"
+                  width={140}
+                  height={140}
+                  className="mb-4"
+                />
+                <h3 className="text-navy font-medium text-[1rem] mb-1">
+                  {award.title}
+                </h3>
+                <p className="text-gray-dark text-[0.9rem] font-bold">
+                  {award.year}
+                </p>
               </div>
             ))}
-          </Slider>
+          </div>
         </div>
       </div>
 
@@ -318,25 +296,29 @@ const AwardsAndNewsSlider = () => {
         </div>
 
         {/* Slider for News */}
-        <div className="overflow-x-auto scrollbar-hide cursor-grab">
-          <Slider ref={newsRef} {...settings}>
+        <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-snap-x mandatory scroll-smooth pb-4">
+          <div className="flex gap-6 min-w-max">
             {news.map((item, index) => (
-              <div key={index} className="px-3 pb-4">
-                <div className="p-6 flex flex-col gap-3 border border-purple-muted/20 rounded-xl bg-purple-muted/1 transition-all duration-300 min-h-[180px]">
-                  <Image
-                    src={item.img}
-                    alt="news"
-                    width={40}
-                    height={40}
-                    className="object-contain"
-                  />
-                  <h3 className="text-navy font-semibold text-[1rem] leading-tight">
-                    {item.title}
-                  </h3>
-                </div>
+              <div
+                key={index}
+                className={`flex-shrink-0 w-[13%] sm:w-[25%] md:w-[45%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start ${
+                  index === news.length - 1 ? "pr-0" : "pr-6"
+                }`}
+              >
+                <Image
+                  src={item.img}
+                  alt="news"
+                  width={40}
+                  height={40}
+                  className="object-contain mb-4"
+                />
+                <h3 className="text-white font-semibold text-[1rem] leading-tight">
+                  {item.title}
+                </h3>
+                <p className="text-gray-medium text-[0.85rem]">{item.desc}</p>
               </div>
             ))}
-          </Slider>
+          </div>
         </div>
       </div>
 
