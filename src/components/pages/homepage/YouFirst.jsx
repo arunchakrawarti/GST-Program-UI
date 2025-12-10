@@ -78,11 +78,11 @@ const YouFirst = () => {
         <div className="flex-1 flex justify-center relative w-[67%] md:w-[80%] lg:w-[90%]">
           <div className="relative rounded-2xl p-3 mt-10 md:mt-6 lg:mt-0">
             <Image
-              src="/Assets/maskgroup.webp"
+              src="/Assets/gst12.jpg"
               alt="GST Transparency Illustration"
               width={400}
               height={500}
-              className="w-full md:w-[300px] lg:w-[350px] h-auto rounded-2xl"
+              className="w-full md:w-[300px] lg:w-[400px] h-[200px] sm:h-[350px] rounded-2xl"
             />
 
             {/* Floating Card 1 */}

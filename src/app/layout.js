@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 
 export const metadata = {
-  title: "Dhan Trade",
-  description: "Dhan Trade - Empowering Smarter Trading with Advanced Algo Solutions",
+  title: "GST Pannel",
+  description: "GST Pannel - Empowering Smarter Trading with Advanced Algo Solutions",
 };
 
 export default function RootLayout({ children }) {

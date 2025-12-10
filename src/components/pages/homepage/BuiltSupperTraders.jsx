@@ -79,7 +79,7 @@ const BuiltSuperTraders = () => {
         <div className="flex-1 order-1 md:order-2 flex justify-center relative w-[67%] md:w-[80%] lg:w-[90%]">
           <div className="relative rounded-2xl p-3">
             <Image
-              src="/Assets/lott5.webp"
+              src="/Assets/gst.jpg"
               alt="Super Trader"
               width={400}
               height={500}
@@ -88,7 +88,7 @@ const BuiltSuperTraders = () => {
 
             {/* Floating Card 1 */}
             <div className="absolute top-20 -left-16 bg-white rounded-xl border border-gray-100 lg:px-4 md:px-2 px-1.5 py-2 text-sm space-y-1 ">
-              <p className="text-gray-medium text-xs">Positions Overview</p>
+              <p className="text-gray-medium text-xs">GST Overview</p>
               <p className="text-gray-dark font-semibold">₹ 8,45,460</p>
               <p className="text-gray-medium text-xs">+3.5% Today</p>
             </div>
@@ -96,11 +96,11 @@ const BuiltSuperTraders = () => {
             {/* Floating Card 2 */}
             <div className="absolute top-32 -right-9 bg-white rounded-lg border border-gray-100 h-16 w-16 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center font-bold text-gray-dark text-2xl md:text-3xl lg:text-4xl ">
               T⁺
-            </div>
+           </div>
 
             {/* Floating Card 3 */}
             <div className="absolute -bottom-6 -right-16 bg-white rounded-xl border border-gray-100 lg:px-4 md:px-2 px-1.5 py-2 text-sm space-y-1 ">
-              <p className="text-gray-dark font-semibold">Margin Funding</p>
+              <p className="text-gray-dark font-semibold">GST Funding</p>
               <p className="text-gray-medium text-xs">
                 LTP ₹ 575.15 | Leverage 4.00×
               </p>

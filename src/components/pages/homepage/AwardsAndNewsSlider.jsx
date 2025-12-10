@@ -253,7 +253,6 @@ const AwardsAndNewsSlider = () => {
 
   return (
     <section id="winning" className="bg-[#fff7ec] py-16 overflow-hidden">
-      {/* ----------- Top Section ----------- */}
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold text-amber-500 flex items-center">
@@ -287,14 +286,10 @@ const AwardsAndNewsSlider = () => {
           </div>
         </div>
       </div>
-
-      {/* ----------- News Section ----------- */}
       <div className="container mx-auto mt-20">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-semibold text-amber-500">We are in the News</h2>
         </div>
-
-        {/* Slider for News */}
         <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-smooth pb-4">
           <div className="flex gap-6 min-w-300 scroll-snap-x mandatory">
             {news.map((item, index) => (
@@ -318,8 +313,6 @@ const AwardsAndNewsSlider = () => {
           </div>
         </div>
       </div>
-
-      {/* Optional Border Section */}
       <div>
         <Image
           src="/Assets/dhanBorder.png"

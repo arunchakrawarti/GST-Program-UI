@@ -13,18 +13,17 @@ const BuiltForInvestors = () => {
         <div className="flex-1 flex justify-center relative w-[67%] md:w-[80%] lg:w-[90%]">
           <div className="relative rounded-2xl p-3">
             <Image
-              src="/Assets/lott2.webp"
+              src="/Assets/gst7.jpg"
               alt="Investor using Dhan"
               width={400}
               height={500}
-              className="w-full md:w-[300px] lg:w-[350px] h-auto rounded-2xl"
+              className="w-full md:w-[300px] lg:w-[400px] h-[200px] sm:h-[400px] rounded-2xl"
             />
 
             {/* Floating Cards */}
             <div className="absolute top-20 -left-16 bg-white rounded-xl border border-gray-100 lg:px-4 md:px-2 px-1.5 py-2 text-sm space-y-1">
-              <p className="text-gray-medium text-xs">Track 10,000+ stocks easily</p>
+              <p className="text-gray-medium text-xs"> 10,000+ gst easily</p>
               <p className="text-gray-dark font-semibold">Watchlist Groups</p>
-              <p className="text-gray-medium text-xs">for long-term investing</p>
             </div>
 
             <div className="absolute top-32 -right-9 bg-white rounded-lg border border-gray-100 h-16 w-16 md:w-20 md:h-20 lg:w-20 lg:h-20 flex items-center justify-center font-bold text-gray-dark text-2xl md:text-3xl lg:text-4xl">
@@ -33,8 +32,7 @@ const BuiltForInvestors = () => {
 
             <div className="absolute -bottom-6 -right-16 bg-white rounded-xl border border-gray-100 lg:px-4 md:px-2 px-1.5 py-2 text-sm space-y-1">
               <p className="text-gray-dark font-semibold">Zero % Commission</p>
-              <p className="text-gray-medium text-xs">on Direct Mutual Funds</p>
-              <p className="text-gray-dark font-semibold">Start Investing</p>
+              <p className="text-gray-medium text-xs">on Goods And Service Tax</p>
             </div>
           </div>
         </div>
