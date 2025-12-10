@@ -190,7 +190,6 @@
 
 
 
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -263,12 +262,12 @@ const AwardsAndNewsSlider = () => {
         </div>
 
         {/* Slider for Awards */}
-        <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-snap-x mandatory scroll-smooth">
-          <div className="flex gap-6 min-w-max">
+        <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-smooth pb-4">
+          <div className="flex gap-6 min-w-max scroll-snap-x mandatory">
             {awards.map((award, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[15%] sm:w-[25%] md:w-[45%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
+                className="flex-shrink-0 w-[15%] sm:w-[30%] md:w-[45%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
               >
                 <Image
                   src={award.img}
@@ -296,14 +295,12 @@ const AwardsAndNewsSlider = () => {
         </div>
 
         {/* Slider for News */}
-        <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-snap-x mandatory scroll-smooth pb-4">
-          <div className="flex gap-6 min-w-max">
+        <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-smooth pb-4">
+          <div className="flex gap-6 min-w-max scroll-snap-x mandatory">
             {news.map((item, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 w-[13%] sm:w-[25%] md:w-[45%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start ${
-                  index === news.length - 1 ? "pr-0" : "pr-6"
-                }`}
+                className={`flex-shrink-0 w-[13%] sm:w-[25%] md:w-[45%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start`}
               >
                 <Image
                   src={item.img}
