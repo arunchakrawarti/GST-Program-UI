@@ -267,7 +267,7 @@ const AwardsAndNewsSlider = () => {
             {awards.map((award, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[22%] sm:w-[30%] md:w-[35%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
+                className="flex-shrink-0 w-[24%] sm:w-[30%] md:w-[35%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
               >
                 <Image
                   src={award.img}
@@ -300,7 +300,7 @@ const AwardsAndNewsSlider = () => {
             {news.map((item, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 w-[22%] sm:w-[20%] md:w-[30%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start`}
+                className={`flex-shrink-0 w-[24%] sm:w-[20%] md:w-[30%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start`}
               >
                 <Image
                   src={item.img}
