@@ -263,11 +263,11 @@ const AwardsAndNewsSlider = () => {
 
         {/* Slider for Awards */}
         <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-smooth pb-4">
-          <div className="flex gap-6 min-w-max scroll-snap-x mandatory">
+          <div className="flex gap-6 min-w-300 scroll-snap-x mandatory">
             {awards.map((award, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[15%] sm:w-[30%] md:w-[45%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
+                className="flex-shrink-0 w-[22%] sm:w-[30%] md:w-[35%] lg:w-[23%] bg-white p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[250px] flex flex-col items-center justify-center text-center scroll-snap-align-start"
               >
                 <Image
                   src={award.img}
@@ -276,10 +276,10 @@ const AwardsAndNewsSlider = () => {
                   height={140}
                   className="mb-4"
                 />
-                <h3 className="text-navy font-medium text-[1rem] mb-1">
+                <h3 className="text-navy font-medium text-[1rem] px-10 mb-1">
                   {award.title}
                 </h3>
-                <p className="text-gray-dark text-[0.9rem] font-bold">
+                <p className="text-gray-dark px-20 text-[0.9rem] font-bold">
                   {award.year}
                 </p>
               </div>
@@ -296,11 +296,11 @@ const AwardsAndNewsSlider = () => {
 
         {/* Slider for News */}
         <div className="overflow-x-auto scrollbar-hide cursor-grab scroll-smooth pb-4">
-          <div className="flex gap-6 min-w-max scroll-snap-x mandatory">
+          <div className="flex gap-6 min-w-300 scroll-snap-x mandatory">
             {news.map((item, index) => (
               <div
                 key={index}
-                className={`flex-shrink-0 w-[13%] sm:w-[25%] md:w-[45%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start`}
+                className={`flex-shrink-0 w-[22%] sm:w-[20%] md:w-[30%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start`}
               >
                 <Image
                   src={item.img}
