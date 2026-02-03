@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaGooglePlay } from "react-icons/fa";
 import { BsLightningCharge } from "react-icons/bs";
 import { IoMdStar } from "react-icons/io";
+import Button from "@/components/atoms/Button";
 
 const HeroSection = () => {
   const texts = [
@@ -98,13 +99,20 @@ const HeroSection = () => {
             </div>
 
             <div className="border-l-2 border-gray-medium pl-3">
-              <h1 className="text-gray-medium text-lg font-semibold">
+              <div>
+                <h1 className="text-gray-medium text-lg font-semibold">
                 Built for
               </h1>
               <p className="text-xl sm:text-2xl font-bold text-white">
                 Chartered Accountants
               </p>
+              </div>
+              <div className="flex gap-3 mt-2">
+                 <Button label="Login" />
+                <Button label="Signup" />
+              </div>
             </div>
+
           </div>
 
           <p className="text-sm sm:text-base text-gray-medium font-semibold mt-6">

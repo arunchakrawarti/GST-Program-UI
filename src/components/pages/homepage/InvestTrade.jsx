@@ -22,7 +22,7 @@ const InvestTrade = () => {
 
           <div  className="justify-center md:justify-start w-full">
             <Button
-              label="Open GST Account"
+              label="Signup"
               showArrow
               className="py-3 px-6 rounded-md font-medium"
             />

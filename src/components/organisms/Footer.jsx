@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="text-white col-span-2">
             <Link href="/">
               <Image
-                width={120}
-                height={60}
-                src="/Assets/footar.png"
+                width={170}
+                height={0}
+                src="/Assets/billbanaologo.png"
                 alt="CaptainBiz Logo"
                 className="-mt-3 -ml-2"
               />

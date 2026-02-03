@@ -48,7 +48,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-5 md:space-x-4 lg:space-x-8">
             <Link href="/">
-              <Image width={125} height={0} src="/Assets/header.png" alt="logo" />
+              <Image width={120} height={0} src="/Assets/billbanaologo.png" alt="logo" />
             </Link>
 
             {/* Desktop Nav */}
@@ -75,7 +75,7 @@ const Header = () => {
             </Link>
 
             <Link href="/open-account">
-              <Button label="Open Account" />
+              <Button label="Signup" />
             </Link>
           </div>
 
