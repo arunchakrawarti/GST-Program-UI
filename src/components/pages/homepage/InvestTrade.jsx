@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/atoms/Button";
+import Link from "next/link";
 
 const InvestTrade = () => {
   return (
@@ -21,11 +22,13 @@ const InvestTrade = () => {
           </p>
 
           <div  className="justify-center md:justify-start w-full">
+           <Link href="https://biil-banao-user.vercel.app/auth/signup">
             <Button
               label="Signup"
               showArrow
               className="py-3 px-6 rounded-md font-medium"
             />
+           </Link>
           </div>
           <p className="text-gray-medium text-sm mt-3">
              No credit card required • Setup in 2 minutes

@@ -9,11 +9,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-[#070C1A]">
-      {/* --- Top Section --- */}
       <div className="md:pb-20 pb-12 container relative">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 pt-16">
 
-          {/* --- Logo & Info --- */}
           <div className="text-white col-span-2">
             <Link href="/">
               <Image
@@ -41,8 +39,7 @@ const Footer = () => {
               support@captainbiz.co
             </a>
           </div>
-
-          {/* --- Services --- */}
+          
           <div>
             <ul className="space-y-3">
               <li className="font-semibold text-white text-[1rem]">Our Services</li>

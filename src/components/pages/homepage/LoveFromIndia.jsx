@@ -8,7 +8,7 @@ const testimonials = [
     name: "Amit Verma",
     username: "@amit_gstfilings",
     text: "GST return filing has become super smooth with this platform. Fast, accurate and hassle-free.",
-    img: "/Assets/lott2.webp",
+    img: "https://i.pravatar.cc/150?img=7",
   },
   {
     name: "Priya Sinha",
@@ -26,7 +26,7 @@ const testimonials = [
     name: "Sumit Sharma",
     username: "@sumit_compliance",
     text: "Amazing UI, easy navigation and total transparency.",
-    img: "https://i.pravatar.cc/150?img=5",
+    img: "https://i.pravatar.cc/150?img=8",
   },
   {
     name: "Neha Jain",

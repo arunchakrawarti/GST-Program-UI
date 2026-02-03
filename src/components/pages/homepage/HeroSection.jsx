@@ -5,6 +5,7 @@ import { FaGooglePlay } from "react-icons/fa";
 import { BsLightningCharge } from "react-icons/bs";
 import { IoMdStar } from "react-icons/io";
 import Button from "@/components/atoms/Button";
+import Link from "next/link";
 
 const HeroSection = () => {
   const texts = [
@@ -108,8 +109,13 @@ const HeroSection = () => {
               </p>
               </div>
               <div className="flex gap-3 mt-2">
-                 <Button label="Login" />
+                <Link href="https://biil-banao-user.vercel.app/auth/signin">
+                <Button label="Login" />
+                </Link>
+                 
+                <Link href="https://biil-banao-user.vercel.app/auth/signup">
                 <Button label="Signup" />
+                </Link>
               </div>
             </div>
 
