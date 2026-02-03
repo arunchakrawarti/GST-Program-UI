@@ -67,14 +67,14 @@ const Header = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Link href="/signin">
+            <Link href="https://biil-banao-user.vercel.app/auth/signin">
               <Button
                 label="Login"
                 className="bg-transparent hover:bg-amber border border-white hover:border-amber text-white hover:text-navy py-2.5 lg:py-2  px-5 md:px-4"
               />
             </Link>
 
-            <Link href="/open-account">
+            <Link href="https://biil-banao-user.vercel.app/auth/signup">
               <Button label="Signup" />
             </Link>
           </div>
@@ -112,14 +112,14 @@ const Header = () => {
             </div>
           ))}
           <div className="md:hidden flex items-center gap-4">
-            <Link href="/signin">
+            <Link href="https://biil-banao-user.vercel.app/auth/signin">
               <Button
                 label="Login"
                 className="bg-transparent hover:bg-amber border border-white hover:border-amber text-white hover:text-navy py-2.5 lg:py-2  px-5 md:px-4"
               />
             </Link>
-            <Link href="/open-account">
-              <Button label="Open Account" />
+            <Link href="https://biil-banao-user.vercel.app/auth/signup">
+              <Button label="Signup" />
             </Link>
           </div>
         </div>
