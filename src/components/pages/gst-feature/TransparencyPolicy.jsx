@@ -3,21 +3,16 @@ import React from 'react'
 const TransparencyPolicy = () => {
   return (
     <div>
-        <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
+        <section className="bg-navy text-white py-10">
       <div className="container mx-auto text-center">
-        <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-5 text-amber mt-10">
+        <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-10 text-amber mt-10">
           Transparency Policy
         </h1>
 
         <p className="text-gray-300 text-[1.3rem] leading-relaxed">
-          We are committed to complete transparency in how our platform operates
-          and how user data is handled. This Transparency Policy explains our
-          approach to data usage, GST calculations, compliance processes, and
-          service charges. All information displayed on the platform is clear,
-          traceable, and aligned with applicable GST laws and regulations. Our
-          goal is to ensure that every user understands how their data is used,
-          how filings are processed, and how compliance decisions are made—without
-          any hidden terms or ambiguity.
+          We believe in complete transparency and honesty in all our services and operations. This Transparency Policy explains how our GST platform functions, how information is processed, and how compliance activities are carried out so that users clearly understand every step without confusion or hidden conditions.
+
+Our platform is built to ensure that businesses, professionals, and Chartered Accountants have full visibility into GST filings, tax calculations, data usage, and service charges. We follow applicable GST laws, rules, and government guidelines to maintain accuracy, reliability, and trust.or ambiguity.
         </p>
       </div>
 

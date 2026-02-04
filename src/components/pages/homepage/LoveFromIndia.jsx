@@ -38,7 +38,7 @@ const testimonials = [
     name: "Vikas Patel",
     username: "@vikas_taxpayer",
     text: "Super quick filing, accurate tax breakup and summaries.",
-    img: "https://i.pravatar.cc/150?img=13",
+    img: "https://i.pravatar.cc/150?img=33",
   },
 ];
 

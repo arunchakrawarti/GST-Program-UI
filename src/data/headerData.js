@@ -19,4 +19,8 @@ export const navItems = [
     lebal: "Gst Feature",
     path: "/gst-feature",
   },
+  {
+    lebal: "Transparency Policy",
+    path: "/transparency-policy",
+  },
 ];

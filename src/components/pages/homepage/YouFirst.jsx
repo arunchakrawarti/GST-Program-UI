@@ -68,7 +68,7 @@ const YouFirst = () => {
             ))}
           </div>
 
-          <Link href="/gst-feature/transparency-policy">
+          <Link href="/transparency-policy">
           <Button
             label="Read Our GST Transparency Policy"
             showArrow
