@@ -8,19 +8,19 @@ const testimonials = [
     name: "Amit Verma",
     username: "@amit_gstfilings",
     text: "GST return filing has become super smooth with this platform. Fast, accurate and hassle-free.",
-    img: "https://i.pravatar.cc/150?img=7",
+    img: "/Assets/lott5.webp",
   },
   {
     name: "Priya Sinha",
     username: "@priyas_taxpro",
     text: "Best GST portal experience, auto-reconciliation saves hours.",
-    img: "/Assets/lott5.webp",
+    img: "/Assets/lott2.webp",
   },
   {
     name: "Rohan Gupta",
     username: "@rohanbiz_owner",
     text: "Finally a platform that makes GST compliance simple and smooth.",
-    img: "https://i.pravatar.cc/150?img=1",
+    img: "https://i.pravatar.cc/150?img=12",
   },
   {
     name: "Sumit Sharma",
@@ -32,13 +32,13 @@ const testimonials = [
     name: "Neha Jain",
     username: "@nehacorporate",
     text: "Automated reports and strong security features. Best for companies.",
-    img: "https://i.pravatar.cc/150?img=3",
+    img: "https://i.pravatar.cc/150?img=5",
   },
   {
     name: "Vikas Patel",
     username: "@vikas_taxpayer",
     text: "Super quick filing, accurate tax breakup and summaries.",
-    img: "https://i.pravatar.cc/150?img=4",
+    img: "https://i.pravatar.cc/150?img=13",
   },
 ];
 

@@ -15,4 +15,8 @@ export const navItems = [
     lebal: "Contact",
     path: "/contact",
   },
+   {
+    lebal: "Gst Feature",
+    path: "/gst-feature",
+  },
 ];

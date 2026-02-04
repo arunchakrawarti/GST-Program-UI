@@ -96,12 +96,6 @@ const BuiltForInvestors = () => {
       </div>
     ))}
   </div>
-
-  <Button
-    label="Explore GST Features"
-    showArrow
-    className="mt-10 px-6 md:px-8 py-3 text-white hover:text-white"
-  />
 </div>
 
       </div>

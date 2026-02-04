@@ -9,6 +9,7 @@ import {
 import { MdShowChart, MdSpeed } from "react-icons/md";
 import Button from "@/components/atoms/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const YouFirst = () => {
   return (
@@ -67,11 +68,13 @@ const YouFirst = () => {
             ))}
           </div>
 
+          <Link href="/gst-feature/transparency-policy">
           <Button
             label="Read Our GST Transparency Policy"
             showArrow
             className="mt-10 px-6 md:px-8 py-3 text-white hover:text-white"
           />
+          </Link>
         </div>
 
         {/* ---- Right Section ---- */}
