@@ -4,7 +4,7 @@ const GstFeature = () => {
   return (
     <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
         <div className='container mx-auto text-center'>
-            <h1 className='mt-10  text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-amber'>GST Feature</h1>
+            <h1 className='mt-10  text-2xl sm:text-4xl  lg:text-5xl font-bold mb-5 text-amber'>GST Feature</h1>
       <p className="text-gray-300 text-[1.3rem] leading-relaxed">
   Our GST platform is designed to simplify every stage of GST compliance for businesses,
   professionals, and Chartered Accountants. From GST registration to return filing,

@@ -5,7 +5,7 @@ const TransparencyPolicy = () => {
     <div>
         <section className="bg-navy text-white py-10 md:py-16 lg:py-20">
       <div className="container mx-auto text-center">
-        <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-amber mt-10">
+        <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-5 text-amber mt-10">
           Transparency Policy
         </h1>
 
