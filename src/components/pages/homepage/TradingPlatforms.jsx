@@ -51,9 +51,9 @@ const TradingPlatforms = () => {
   latest GST rules and file your returns on time.
           </p>
 
-         <Link href="">
+         {/* <Link href="">
           <Button label="Explore GST App " showArrow className="py-3 px-6 md:px-8"/>
-         </Link>
+         </Link> */}
         </div>
 
         {/* RIGHT PHONE MOCKUPS */}

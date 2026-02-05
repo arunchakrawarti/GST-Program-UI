@@ -33,17 +33,17 @@ const AwardsAndNewsSlider = () => {
 
   const news = [
     {
-      img: "https://i.pravatar.cc/150?img=17",
+      img: "/Assets/girl.jpg",
       title: "Our GST Software Helps 1.2M+ Businesses File Seamlessly",
       desc: "Automated filing boosted efficiency by 70%",
     },
     {
-      img: "https://i.pravatar.cc/150?img=13",
+      img: "/Assets/man5.jpg",
       title: "Partnership with CA Networks Across India",
       desc: "Helping professionals simplify GST compliance",
     },
     {
-      img: "https://i.pravatar.cc/150?img=18",
+      img: "/Assets/girl2.jpg",
       title: "AI-Based Error Detection Introduced",
       desc: "Reduces GST return mistakes by 85%",
     },
@@ -105,13 +105,13 @@ const AwardsAndNewsSlider = () => {
                 key={index}
                 className={`flex-shrink-0 w-[24%] sm:w-[20%] md:w-[30%] lg:w-[23%] bg-[#2a4565] p-6 rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300 min-h-[180px] flex flex-col items-center scroll-snap-align-start`}
               >
-                <Image
+                {/* <Image
                   src={item.img}
                   alt="news"
                   width={40}
                   height={40}
                   className="object-contain mb-4"
-                />
+                /> */}
                 <h3 className="text-white font-semibold text-[1rem] leading-tight">
                   {item.title}
                 </h3>

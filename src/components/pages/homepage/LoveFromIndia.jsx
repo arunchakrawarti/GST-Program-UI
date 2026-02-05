@@ -7,38 +7,38 @@ const testimonials = [
   {
     name: "Amit Verma",
     username: "@amit_gstfilings",
-    text: "GST return filing has become super smooth with this platform. Fast, accurate and hassle-free.",
+    text: "Managing multiple GST clients used to be very time-consuming. After switching to this GST panel, return filing, ITC reconciliation, and compliance tracking have become extremely smooth. The dashboard gives complete control and saves hours of manual work every month",
     img: "/Assets/lott5.webp",
   },
   {
     name: "Priya Sinha",
     username: "@priyas_taxpro",
-    text: "Best GST portal experience, auto-reconciliation saves hours.",
+    text: "Earlier, GST filings were confusing and stressful for me. This software made everything simple—from GSTR-1 to GSTR-3B filing. The reminders and alerts ensure I never miss a due date.",
     img: "/Assets/lott2.webp",
   },
   {
     name: "Rohan Gupta",
     username: "@rohanbiz_owner",
-    text: "Finally a platform that makes GST compliance simple and smooth.",
-    img: "https://i.pravatar.cc/150?img=12",
+    text: "This panel has reduced manual GST work by more than 50%. Automated reminders, accurate calculations, and a clean dashboard make it one of the best GST software I’ve used.",
+    img: "/Assets/man3.jpg",
   },
   {
     name: "Sumit Sharma",
     username: "@sumit_compliance",
-    text: "Amazing UI, easy navigation and total transparency.",
-    img: "https://i.pravatar.cc/150?img=8",
+    text: "The auto ITC calculation and validation features are a big plus. Errors are detected before filing, which has reduced rejections and notices significantly. It’s a very reliable GST compliance tool",
+    img: "/Assets/manimage.jpg",
   },
   {
     name: "Neha Jain",
     username: "@nehacorporate",
-    text: "Automated reports and strong security features. Best for companies.",
-    img: "https://i.pravatar.cc/150?img=5",
+    text: "Real-time GST portal sync and detailed reports help us track liabilities and payments accurately. The software brings transparency and confidence to our GST operations.",
+    img: "/Assets/girl1.jpg",
   },
   {
     name: "Vikas Patel",
     username: "@vikas_taxpayer",
-    text: "Super quick filing, accurate tax breakup and summaries.",
-    img: "https://i.pravatar.cc/150?img=33",
+    text: "E-invoice and e-way bill generation from a single platform has simplified our daily operations. The panel is fast, user-friendly, and perfectly suited for growing businesses.",
+    img: "/Assets/man2.jpg",
   },
 ];
 
