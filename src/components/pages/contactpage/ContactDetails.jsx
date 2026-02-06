@@ -20,14 +20,14 @@ const ContactDetailsGST = () => {
           <div className="p-6 rounded-2xl border border-gray-medium/10 hover:border-none hover:shadow-md transition-all bg-[#f9f9f9]">
             <FiMail className="text-amber text-3xl mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-navy mb-2">Email</h3>
-            <p className="text-gray-dark text-sm">support@Bill Banao.com</p>
+            <p className="text-gray-dark text-sm">support@captainbiz.com</p>
           </div>
 
           <div className="p-6 rounded-2xl border border-gray-medium/10 hover:border-none hover:shadow-md transition-all bg-[#f9f9f9]">
             <FiMapPin className="text-amber text-3xl mx-auto mb-4" />
             <h3 className="text-lg font-semibold text-navy mb-2">Office</h3>
             <p className="text-gray-dark text-sm">
-              12th Floor, Bill Banao Tower, Mumbai, India
+              12th Floor, CaptainBiz Tower, Mumbai, India
             </p>
           </div>
         </div>

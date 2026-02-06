@@ -7,7 +7,7 @@ const ContactHeroGST = () => {
     <section className="bg-navy text-white py-10 md:py-16 lg:py-20 text-center">
       <div className="container flex flex-col items-center">
         <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 mt-16">
-          Contact Bill Banao
+          Contact CaptainBiz
         </h1>
         <p className="text-lg max-w-3xl mx-auto text-gray-medium mb-8">
           Have questions about GST compliance, e-invoicing, or accounting? 

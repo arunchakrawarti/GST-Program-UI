@@ -97,6 +97,15 @@ const HeroSection = () => {
               <p className="text-xl sm:text-2xl font-bold text-white">
                 Businesses
               </p>
+              <div className="flex gap-3 mt-2">
+                <Link href="https://biil-banao-user.vercel.app/auth/signin">
+                <Button label="Login" />
+                </Link>
+                 
+                <Link href="https://biil-banao-user.vercel.app/auth/signup">
+                <Button label="Signup" />
+                </Link>
+              </div>
             </div>
 
             <div className="border-l-2 border-gray-medium pl-3">

@@ -18,13 +18,13 @@ const Footer = () => {
                 width={170}
                 height={0}
                 src="/Assets/billbanaologo.png"
-                alt="Bill Banao Logo"
+                alt="CaptainBiz Logo"
                 className="-mt-3 -ml-2"
               />
             </Link>
 
             <p className="mt-6 text-[1rem] leading-relaxed text-gray-medium">
-              Bill Banao is a complete GST platform to manage <strong>E-Way Bills, E-Invoices,</strong> purchase & sales invoices, order tracking, receipts, and business accounting — all in one place.
+              CaptainBiz is a complete GST platform to manage <strong>E-Way Bills, E-Invoices,</strong> purchase & sales invoices, order tracking, receipts, and business accounting — all in one place.
             </p>
 
             <button className="bg-navy py-2.5 px-4 rounded-lg my-6 text-white text-[0.9rem]">
@@ -33,7 +33,7 @@ const Footer = () => {
 
             <p className="font-semibold text-white text-[1rem] pb-2">Email Us</p>
             <a
-              href="mailto:support@Bill Banao.co"
+              href="mailto:support@captainbiz.co"
               className="hover:text-amber transition-all duration-300 text-sm text-gray-medium"
             >
               billbanao3@gmail.com
@@ -79,7 +79,7 @@ const Footer = () => {
           {/* --- About Company --- */}
           <div>
             <ul className="space-y-3">
-              <li className="font-semibold text-white text-[1rem]">About Bill Banao</li>
+              <li className="font-semibold text-white text-[1rem]">About CaptainBiz</li>
               <li className="text-gray-medium hover:text-amber transition-all duration-300">
                 <Link href="/#features">Features</Link>
               </li>
@@ -104,7 +104,7 @@ const Footer = () => {
               <li className="font-semibold text-white text-[1rem]">Follow Us</li>
               <li>
                 <a
-                  href="https://www.youtube.com/@Bill Banao"
+                  href="https://www.youtube.com/@CaptainBiz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-[0.95rem] flex items-center"
@@ -117,7 +117,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/Bill Banao/"
+                  href="https://www.instagram.com/captainbiz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-[0.95rem] flex items-center"
@@ -130,7 +130,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://t.me/Bill Banao"
+                  href="https://t.me/captainbiz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white text-[0.95rem] flex items-center"
@@ -162,13 +162,13 @@ const Footer = () => {
       {/* --- Regulatory Section --- */}
       <div className=" py-8 px-5 md:px-10 lg:px-28 border-t border-gray-dark">
         <p className="text-gray-medium text-sm leading-relaxed max-w-5xl mx-auto text-center">
-          Bill Banao is a product of XYZ Tech Services Pvt Ltd. GST Registered — GSTIN: 27ABCDE1234F1Z5. CIN: U12345MH2020PTC123456. Registered Office: B/404, Marathon Innova, Ganpatrao Kadam Marg, Lower Parel, Mumbai 400013.
+          CaptainBiz is a product of XYZ Tech Services Pvt Ltd. GST Registered — GSTIN: 27ABCDE1234F1Z5. CIN: U12345MH2020PTC123456. Registered Office: B/404, Marathon Innova, Ganpatrao Kadam Marg, Lower Parel, Mumbai 400013.
         </p>
       </div>
 
       {/* --- Bottom Copyright --- */}
       <p className="md:p-6 p-4 text-gray-medium text-center text-[0.85rem] border-t border-gray-dark tracking-wide">
-        © {new Date().getFullYear()} Bill Banao. All Rights Reserved | GST Registered | Simplifying Business Compliance
+        © {new Date().getFullYear()} CaptainBiz. All Rights Reserved | GST Registered | Simplifying Business Compliance
       </p>
     </footer>
   );

@@ -4,7 +4,7 @@ export const navItems = [
     path: "/",
   },
   {
-    lebal: "Markets",
+    lebal: "What You Get",
     path: "/markets",
   },
   {

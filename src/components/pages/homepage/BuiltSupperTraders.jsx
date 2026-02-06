@@ -17,7 +17,7 @@ const BuiltSuperTraders = () => {
             Best GST Billing Software
           </h2>
           <p className="text-gray-medium mb-8 text-[1.05rem]">
-            Bill Banao is a reliable and easy-to-use GST Billing Software built for small and medium businesses in India. It simplifies invoicing, manages inventory, tracks payments, and ensures timely tax compliance, all from one dashboard. Whether you’re a retailer, wholesaler, or service provider. Bill Banao helps you streamline operations and grow your business efficiently.
+            CaptainBiz is a reliable and easy-to-use GST Billing Software built for small and medium businesses in India. It simplifies invoicing, manages inventory, tracks payments, and ensures timely tax compliance, all from one dashboard. Whether you’re a retailer, wholesaler, or service provider. CaptainBiz helps you streamline operations and grow your business efficiently.
           </p>
 
           {/* ---- Feature List ---- */}
