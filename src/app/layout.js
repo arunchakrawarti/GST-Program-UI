@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 
 export const metadata = {
-  title: "GST Pannel",
+  title: "Bill Banao",
   description: "GST Pannel - Empowering Smarter Trading with Advanced Algo Solutions",
 };
 

@@ -122,11 +122,9 @@ const HeroSection = () => {
           </div>
 
           <p className="text-sm sm:text-base text-gray-medium font-semibold mt-6">
-            Open your <span className="text-amber uppercase">free</span> demat
+            Open your free
             account in minutes!
           </p>
-
-          {/* Stats */}
           <div className="flex flex-wrap gap-4 sm:gap-6 text-sm sm:text-base mt-4">
             <div className="flex items-center gap-2">
               <IoMdStar className="text-amber text-lg" />
