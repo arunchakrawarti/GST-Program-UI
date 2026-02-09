@@ -13,13 +13,13 @@ const GSTHero = () => {
           Manage E-Way Bills, E-Invoices, track sales & purchases, monitor cash flow, 
           and stay GST-compliant — all from one easy-to-use platform.
         </p>
-        <Button 
+        {/* <Button 
           label="Start 14-Day Free Trial" 
           className="py-3 px-6 rounded-md text-white font-medium"
-        />
-        <p className="text-gray-medium text-sm mt-3 max-w-md">
+        /> */}
+        {/* <p className="text-gray-medium text-sm mt-3 max-w-md">
           No credit card required. Get started in minutes.
-        </p>
+        </p> */}
       </div>
     </section>
   );

@@ -14,12 +14,12 @@ const teamMembersGST = [
     role: "Head of GST Compliance",
   },
   {
-    image: "/Assets/lott5.webp",
+    image: "/Assets/man3.jpg",
     name: "Arjun Patel",
     role: "Lead GST Developer",
   },
   {
-    image: "/Assets/lott2.webp",
+    image: "/Assets/girl1.jpg",
     name: "Priya Nair",
     role: "Head of Client Success",
   },

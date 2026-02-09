@@ -16,7 +16,7 @@ const FAQ = () => {
         Frequently Asked Questions
       </p>
       <p className="text-center text-gray-medium text-[1rem] mt-2">
-        Have questions about CaptainBiz GST? We’ve got all your answers here!
+        Have questions about Bill Banao GST? We’ve got all your answers here!
       </p>
       <div className="w-full md:w-8/12 lg:w-10/12 mx-auto mt-10 md:mt-11 lg:mt-12">
         {faqs.map(({ question, answer }, index) => (

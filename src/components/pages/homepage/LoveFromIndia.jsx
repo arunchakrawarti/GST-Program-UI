@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/atoms/Button";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -104,7 +105,9 @@ const LoveFromIndia = () => {
 
             <p className="text-sm text-white">72K+</p>
 
+           <Link href="https://biil-banao-user.vercel.app/auth/signin">
             <Button label="Join Now" showArrow className="py-3 px-5 rounded-md" />
+           </Link>
           </div>
         </div>
 

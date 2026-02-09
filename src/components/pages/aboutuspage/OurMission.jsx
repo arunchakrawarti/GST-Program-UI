@@ -9,7 +9,7 @@ const OurMissionGST = () => {
           Our Mission
         </h2>
         <p className="text-gray-dark max-w-3xl mx-auto text-lg leading-relaxed">
-          At CaptainBiz, our mission is to simplify GST compliance for every business in India. 
+          At Bill Banao, our mission is to simplify GST compliance for every business in India. 
           We aim to make tax filing, E-Invoice generation, and E-Way Bill management seamless, 
           reducing complexity and saving time. With intelligent automation, real-time tracking, 
           and easy-to-use tools, we empower businesses to focus on growth while staying fully compliant.

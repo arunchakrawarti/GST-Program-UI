@@ -11,7 +11,7 @@ const InvestTrade = () => {
         {/* Left Content */}
         <div className="text-center md:text-left md:order-1 order-2 py-10 lg:py-14">
           <h1 className="text-[2rem] md:text-[2.3rem] lg:text-[2.6rem] font-semibold text-white leading-tight mb-4">
-            Built Superfast. <br /> Made for  CaptainBiz Filing.
+            Built Superfast. <br /> Made for  Bill Banao Filing.
           </h1>
 
           <p className="text-white text-[1rem] md:text-[1.1rem] leading-relaxed mb-8 max-w-md mx-auto md:mx-0 opacity-90">
