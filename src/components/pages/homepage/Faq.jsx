@@ -50,39 +50,39 @@ export default FAQ;
 
 const faqs = [
   {
-    question: "What is GSTPro?",
+    question: "What is Bill Banao?",
     answer:
-      "GSTPro is an advanced GST billing and return-filing platform designed for businesses, accountants, and tax professionals. It simplifies GST filing, e-invoicing, e-way bills, and compliance with powerful automation tools.",
+      "Bill Banao is an advanced GST billing and return-filing platform designed for businesses, accountants, and tax professionals. It simplifies GST filing, e-invoicing, e-way bills, and compliance with powerful automation tools.",
   },
   {
-    question: "How do I create an account on GSTPro?",
+    question: "How do I create an account on Bill Banao?",
     answer:
       "You can create an account in minutes using your mobile number, email, PAN, and business GSTIN. Once verified, you can instantly start filing GST returns and generating invoices.",
   },
   {
-    question: "Does GSTPro support automated GST filing?",
+    question: "Does Bill Banao support automated GST filing?",
     answer:
-      "Yes! GSTPro offers 100% automated GST filing with auto-import of GSTR-2A/2B, reconciliation, error detection, and one-click filing. It saves hours of manual work.",
+      "Yes! Bill Banao offers 100% automated GST filing with auto-import of GSTR-2A/2B, reconciliation, error detection, and one-click filing. It saves hours of manual work.",
   },
   {
-    question: "Can GSTPro generate e-Invoicing and e-Way Bills?",
+    question: "Can Bill Banao generate e-Invoicing and e-Way Bills?",
     answer:
-      "Absolutely. GSTPro directly integrates with the Government IRP portal to generate e-Invoices and e-Way Bills instantly, without switching between multiple systems.",
+      "Absolutely. Bill Banao directly integrates with the Government IRP portal to generate e-Invoices and e-Way Bills instantly, without switching between multiple systems.",
   },
   {
-    question: "Is my GST data safe on GSTPro?",
+    question: "Is my GST data safe on Bill Banao?",
     answer:
-      "Yes, GSTPro uses bank-grade encryption, secure cloud servers, and multi-layer authentication to ensure your financial and GST data always stays protected.",
+      "Yes, Bill Banao uses bank-grade encryption, secure cloud servers, and multi-layer authentication to ensure your financial and GST data always stays protected.",
   },
   {
-    question: "Can I use GSTPro on mobile and desktop?",
+    question: "Can I use Bill Banao on mobile and desktop?",
     answer:
-      "Yes! GSTPro works on web, desktop, and mobile. You can manage invoices, track returns, and monitor compliance anytime, anywhere.",
+      "Yes! Bill Banao works on web, desktop, and mobile. You can manage invoices, track returns, and monitor compliance anytime, anywhere.",
   },
   {
-    question: "Does GSTPro provide customer support?",
+    question: "Does Bill Banao provide customer support?",
     answer:
-      "Yes, GSTPro provides priority support via live chat, WhatsApp, email, and phone. CA support is also available for advanced GST queries.",
+      "Yes, Bill Banao provides priority support via live chat, WhatsApp, email, and phone. CA support is also available for advanced GST queries.",
   },
 ];
 

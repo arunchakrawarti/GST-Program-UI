@@ -81,19 +81,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="font-semibold text-white text-[1rem]">About Bill Banao</li>
               <li className="text-gray-medium hover:text-amber transition-all duration-300">
-                <Link href="/#features">Features</Link>
+                <Link href="/gst-feature">Features</Link>
+              </li>
+              {/* <li className="text-gray-medium hover:text-amber transition-all duration-300">
+                <Link href="/markets">What You Get</Link>
+              </li> */}
+              <li className="text-gray-medium hover:text-amber transition-all duration-300">
+                <Link href="/transparency-policy">Transparency Policy</Link>
               </li>
               <li className="text-gray-medium hover:text-amber transition-all duration-300">
-                <Link href="/#pricing">Pricing</Link>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li className="text-gray-medium hover:text-amber transition-all duration-300">
-                <Link href="/#faq">FAQ</Link>
-              </li>
-              <li className="text-gray-medium hover:text-amber transition-all duration-300">
-                <Link href="/#about">About Us</Link>
-              </li>
-              <li className="text-gray-medium hover:text-amber transition-all duration-300">
-                <Link href="/#contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
